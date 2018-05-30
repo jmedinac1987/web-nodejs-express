@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    .row.justify-content-center
+        .col-md-auto
+            .card-body
+                form.form-control(method='post', action="mensaje/enviar")                
+                    .form-group
+                        label(for="de") De:       
+                        input.form-control(type="text", placeholder="Ingrese su Nombre", name="de", required="", minlength="2")      
+                    .form-group
+                        label(for="email") E-mail: 
+                        input.form-control(type="email", placeholder="Ingrese su E-mail", name="email", required="")    
+                    .form-group
+                        label(for="mensaje") Mensaje:
+                        textarea.form-control(rows="3", name="mensaje", required="")
+                    .form-group
+                        button.btn.btn-primary.ml-1.mt-1.mb-1(type="submit", name="enviar") Agregar                    
+                        button.btn.btn-secondary.ml-1.mt-1.mb-1(type="reset")  Borrar Datos                    
+                        a.btn.btn-info.ml-1.mt-1.mb-1(href="/") Cancelar

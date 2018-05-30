@@ -1,0 +1,20 @@
+.info{
+  color: black;
+  padding: 20px;
+}
+
+.infoContent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.infoContent .block{
+  padding: 8px;
+  width: 100%;
+}
+
+.infoContent .block .icon-social{
+  font-size: 70px;
+}
